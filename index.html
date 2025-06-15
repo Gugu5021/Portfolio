@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Mon <span>Portfolio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Bonjour, je suis <span class="highlight">Nicolas Piveteau</span></h2>
+                <h3 class="profession">Développeur</h3>
+                <p>Bienvenue sur mon portfolio professionnel. Je crée des expériences pour toute et tous.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn primary-btn">Me contacter</a>
+                    <a href="#projets" class="btn secondary-btn">Voir mes projets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile-placeholder.jpg" alt="Ma photo de profil">
+                </div>
+                <div class="about-text">
+                    <h3>Qui suis-je?</h3>
+                    <p>Je suis un développeur web passionné par la création de sites web modernes et fonctionnels. Avec plusieurs années d'expérience dans le domaine, je maîtrise différentes technologies pour offrir des solutions personnalisées.</p>
+                    
+                    <h3>Mon parcours</h3>
+                    <p>Après avoir obtenu mon diplôme en informatique, j'ai travaillé sur divers projets qui m'ont permis d'acquérir une expertise dans le développement web. Je me forme continuellement aux nouvelles technologies pour rester à la pointe.</p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span>Nom:</span> Nicolas Piveteau
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span> nico.piveteau@outlook.fr
+                        </div>
+                        <div class="info-item">
+                            <span>Disponibilité:</span> Disponible
+                        </div>
+                    </div>
+                    
+                    <a href="CV_Nicolas_Piveteau.pdf" class="btn primary-btn" download="CV_Nicolas_Piveteau.pdf">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences</h2>
+            <ul class="competence-list">
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-css3-alt"></i> CSS</li>
+                <li><i class="fab fa-html5"></i> HTML</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fas fa-database"></i> SQL</li>
+                <li><i class="fab fa-php"></i> PHP</li>
+                <li><i class="fab fa-microsoft"></i> C#</li>
+                <li><i class="fas fa-code"></i> C++</li>
+                <li><i class="fas fa-code"></i> Bash</li>
+                <li><i class="fas fa-file-code"></i> UML</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Jeux Vidéo</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="images/project1.jpg" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Développement d'une boutique en ligne avec système de panier et paiement</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="design">
+                    <div class="project-img">
+                        <img src="images/project2.jpg" alt="Projet 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Conception jeux vidéo</h3>
+                        <p>Analyse et Conception d'un jeux vidéo</p>
+                        <div class="project-tags">
+                            <span>Analyse</span>
+                            <span>UML</span>
+                            <span>Graphisme</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project-item" data-category="mobile">
+                    <div class="project-img">
+                        <img src="images/project3.jpg" alt="Projet 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Mobile</h3>
+                        <p>Application mobile de gestion de tâches avec synchronisation cloud</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="btn secondary-btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p>nico.piveteau@outlook.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Téléphone</h3>
+                            <p>+33 6 65 12 37 76</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Localisation</h3>
+                            <p>Amiens, France</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nicolas-piveteau/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Gugu5021?tab=repositories" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Nicolas Piveteau - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
