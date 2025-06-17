@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Conception Jeux Vidéo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    <link rel="stylesheet" href="../css/image-zoom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Mon <span>Portfolio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#methodologie">Méthodologie</a></li>
+                    <li><a href="#fonctionnalites">Caractéristiques</a></li>
+                    <li><a href="#defis">Défis & Solutions</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Héro -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Conception Jeux Vidéo</h1>
+                <p>Analyse | UML | Game Design | C#</p>
+                <p><small>Projet réalisé en 2024</small></p>
+                <div class="hero-btns">
+                    <a href="#presentation" class="btn primary-btn">Découvrir le projet</a>
+                    <a href="../index.html" class="btn secondary-btn">Retour au Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation du projet -->
+    <section class="section" id="presentation">
+        <div class="container">
+            <h2 class="section-title">Présentation du Projet</h2>
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="../images/project2.jpg" alt="Conception jeux vidéo">
+                </div>
+                <div class="project-info">
+                    <h3>Analyse et conception d'un jeu vidéo</h3>
+                    <p>Ce projet représente l'analyse complète et la conception d'un jeu vidéo de type aventure-RPG. À travers ce travail, j'ai développé une vision globale du processus de création de jeux vidéo, de la phase initiale d'idéation à la conception détaillée des mécaniques de gameplay.</p>
+                    <p>Utilisant des méthodologies de conception orientée objet et les diagrammes UML, j'ai créé une documentation complète permettant de structurer le développement du jeu. Le projet comprend également des maquettes graphiques et des prototypes fonctionnels de certaines mécaniques de jeu.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Analyse</span>
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">Graphisme</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Méthodologie -->
+    <section class="section gray-bg" id="methodologie">
+        <div class="container">
+            <h2 class="section-title">Méthodologie de Conception</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
+                    <h4>Analyse des Besoins</h4>
+                    <p>Définition du concept de jeu, étude des joueurs cibles, établissement des objectifs techniques et créatifs, et benchmarking des jeux similaires sur le marché pour identifier les opportunités.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>Modélisation UML</h4>
+                    <p>Création de diagrammes de classes, de séquence, d'états et de cas d'utilisation pour modéliser le système de jeu, les interactions entre objets et le flux de gameplay.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <h4>Design Graphique</h4>
+                    <p>Conception de l'identité visuelle, création de maquettes pour l'interface utilisateur, esquisses de personnages et d'environnements, et établissement d'une charte graphique cohérente.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h4>Prototypage</h4>
+                    <p>Développement de prototypes fonctionnels pour tester les mécaniques de jeu clés, validation des concepts et itération basée sur les retours utilisateurs initiaux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caractéristiques -->
+    <section class="section" id="fonctionnalites">
+        <div class="container">
+            <h2 class="section-title">Caractéristiques du Jeu</h2>
+            <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
+                <div class="project-item">
+                    <div class="project-img image-zoom-container">
+                        <img src="../images/Logique_de_Construction.jpg" alt="Logique de Construction" class="zoomable-image" onclick="openFullscreen(this.src, this.alt)">
+                    </div>
+                    <div class="project-info">
+                        <h3>Logique de Construction</h3>
+                        <p>La conceptualisation de classes pour centralisation et hérédité permet d'organiser le code en regroupant les fonctionnalités communes dans des classes centrales tout en établissant des hiérarchies où les classes dérivées héritent des propriétés de leurs parents. Cette approche réduit la redondance et facilite la maintenance en créant une structure modulaire où les modifications se propagent automatiquement dans tout le système.</p>
+                        <div class="project-tags">
+                            <span>Game Design</span>
+                            <span>UML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-img image-zoom-container">
+                        <img src="../images/Création_de_Design.jpg" alt="Création de Design" class="zoomable-image" onclick="openFullscreen(this.src, this.alt)">
+                    </div>
+                    <div class="project-info">
+                        <h3>Création de Design</h3>
+                        <p>L'élaboration d'interfaces et de textures combine la création d'éléments graphiques interactifs avec la conception de surfaces visuelles détaillées qui définissent l'apparence des objets 2D. Ce processus intègre des principes d'ergonomie pour l'interface utilisateur tout en développant des textures réalistes avec des techniques avancées de mapping pour enrichir l'expérience visuelle du joueur.</p>
+                        <div class="project-tags">
+                            <span>Graphisme</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Conteneur pour l'affichage en plein écran -->
+            <div id="imageFullscreen" class="image-fullscreen" onclick="closeFullscreen()">
+                <img id="fullscreenImg" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Défis & Solutions -->
+    <section class="section gray-bg" id="defis">
+        <div class="container">
+            <h2 class="section-title">Défis & Solutions</h2>
+            <div class="challenges-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Équilibrage du Gameplay</h3>
+                    <p><strong>Défi :</strong> Trouver le juste équilibre entre difficulté et accessibilité pour satisfaire différents types de joueurs.</p>
+                    <p><strong>Solution :</strong> Mise en place d'un système d'ajustement dynamique de la difficulté basé sur les performances du joueur et création de multiples niveaux de difficulté prédéfinis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+                    <h3>Cohérence des Mécaniques</h3>
+                    <p><strong>Défi :</strong> Intégrer harmonieusement différentes mécaniques de jeu sans créer de déséquilibre ou de complexité excessive.</p>
+                    <p><strong>Solution :</strong> Organisation de sessions de playtest régulières et utilisation de matrices d'interaction pour identifier et résoudre les conflits entre mécaniques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-memory"></i></div>
+                    <h3>Optimisation des Ressources</h3>
+                    <p><strong>Défi :</strong> Concevoir un jeu ambitieux tout en respectant les contraintes techniques (mémoire, performance, etc.).</p>
+                    <p><strong>Solution :</strong> Utilisation de techniques d'optimisation comme le level of detail, le streaming de contenu et la réutilisation intelligente d'assets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Expérience Utilisateur</h3>
+                    <p><strong>Défi :</strong> Créer une interface intuitive et accessible sans sacrifier la profondeur du gameplay.</p>
+                    <p><strong>Solution :</strong> Développement itératif de l'UI/UX basé sur des tests utilisateurs, implémentation d'un système de tutoriel progressif et contextuel.</p>
+                </div>
+            </div>
+            
+            <div class="project-details" style="margin-top: 50px;">
+                <div class="project-info">
+                    <h3>Technologies Utilisées</h3>
+                    <p><strong>Moteur de jeu :</strong> Unity 3D</p>
+                    <p><strong>Langage :</strong> C#</p>
+                    <p><strong>Modélisation :</strong> Visual Paradigm, Draw.io</p>
+                    <p><strong>Design graphique :</strong> Aseprite</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">Aseprite</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Résultats & Apprentissages</h3>
+                    <p>Ce projet a permis de :</p>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;">
+                        <li>Développer une compréhension approfondie du processus de conception de jeux</li>
+                        <li>Maîtriser les techniques de modélisation UML appliquées aux jeux vidéo</li>
+                        <li>Améliorer la capacité à équilibrer créativité et contraintes techniques</li>
+                        <li>Renforcer les compétences en gestion de projet créatif</li>
+                        <li>Acquérir une expérience pratique avec l'environnement Unity et C#</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="../index.html" class="btn primary-btn back-to-portfolio">Retour au Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Nicolas Piveteau - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/image-zoom.js"></script>
+</body>
+</html>
