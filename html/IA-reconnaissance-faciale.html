@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - IA et Reconnaissance Faciale</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Mon <span>Portfolio</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                    <li><a href="#defis">Défis & Résultats</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Héro -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>IA et Reconnaissance Faciale</h1>
+                <p>Intelligence Artificielle | Deep Learning | Computer Vision</p>
+                <p><small>Projet réalisé en 2024</small></p>
+                <div class="hero-btns">
+                    <a href="#presentation" class="btn primary-btn">Découvrir le projet</a>
+                    <a href="../index.html" class="btn secondary-btn">Retour au Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation du projet -->
+    <section class="section" id="presentation">
+        <div class="container">
+            <h2 class="section-title">Présentation du Projet</h2>
+            <div class="project-details">
+                <div class="project-image">
+                    <img src="images/project3.jpg" alt="IA et reconnaissance faciale">
+                </div>
+                <div class="project-info">
+                    <h3>Système de reconnaissance faciale basé sur l'IA</h3>
+                    <p>Ce projet explore les technologies d'intelligence artificielle appliquées à la reconnaissance faciale. J'ai pour objectife de développé un système capable d'identifier des visages à partir d'images avec une précision dépassant 95%.</p>
+                    <p>Le système utilisera des réseaux neuronaux convolutifs (CNN) et des algorithmes de deep learning pour extraire les caractéristiques faciales et effectuer la reconnaissance. Une attention particulière a été portée aux questions éthiques et à la protection de la vie privée dans le développement du projet.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies utilisées -->
+    <section class="section gray-bg" id="technologies">
+        <div class="container">
+            <h2 class="section-title">Technologies Utilisées</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                    <p>Langage principal pour le développement des algorithmes d'apprentissage automatique et le traitement d'images.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h4>TensorFlow & Keras</h4>
+                    <p>Frameworks utilisés pour la conception et l'entraînement des modèles de réseaux neuronaux profonds.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-camera"></i></div>
+                    <h4>OpenCV</h4>
+                    <p>Bibliothèque de traitement d'images utilisée pour la détection faciale, le prétraitement et la capture vidéo.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h4>Gestion de données</h4>
+                    <p>Stockage et manipulation de grands ensembles de données d'entraînement (LFW, CelebA) avec NumPy et Pandas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section class="section" id="fonctionnalites">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités Principales</h2>
+            <div class="projects-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="../images/Detection_Faciale.jpg" alt="Détection faciale">
+                    </div>
+                    <div class="project-info">
+                        <h3>Détection Faciale</h3>
+                        <p>Détection précise des visages dans une image ou flux vidéo en temps réel, avec prise en charge de plusieurs visages simultanément et adaptation aux différentes conditions d'éclairage.</p>
+                        <div class="project-tags">
+                            <span>OpenCV</span>
+                            <span>MTCNN</span>
+                            <span>Haar Cascades</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/Extraction_de_Caractéristiques.jpg" alt="Extraction de caractéristiques">
+                    </div>
+                    <div class="project-info">
+                        <h3>Extraction de Caractéristiques</h3>
+                        <p>Génération d'embeddings faciaux grâce à des modèles CNN pré-entraînés comme FaceNet, permettant de transformer chaque visage en un vecteur numérique de 128 dimensions pour la comparaison faciale.</p>
+                        <div class="project-tags">
+                            <span>CNN</span>
+                            <span>FaceNet</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Défis & Résultats -->
+    <section class="section gray-bg" id="defis">
+        <div class="container">
+            <h2 class="section-title">Défis & Résultats</h2>
+            <div class="challenges-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Optimisation des Performances</h3>
+                    <p><strong>Défi :</strong> Faire fonctionner l'analyse en temps réel sur du matériel standard, car les modèles de deep learning sont gourmands en ressources.</p>
+                    <p><strong>Solution :</strong> Utilisation de techniques d'optimisation comme la quantification des modèles et l'accélération GPU avec CUDA, réduisant le temps d'inférence de 75%.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Précision vs Faux Positifs</h3>
+                    <p><strong>Défi :</strong> Équilibrer le taux de reconnaissance correct avec la minimisation des faux positifs, crucial pour les applications de sécurité.</p>
+                    <p><strong>Solution :</strong> Implémentation d'un système de seuil adaptatif et d'une méthodologie d'évaluation multicritère (précision, rappel, F1-score).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Éthique et Vie Privée</h3>
+                    <p><strong>Défi :</strong> Développer une technologie de reconnaissance faciale tout en respectant les considérations éthiques et légales de protection des données.</p>
+                    <p><strong>Solution :</strong> Mise en place d'un système de consentement explicite, anonymisation des données d'entraînement et options de suppression immédiate des données biométriques.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Résultats Obtenus</h3>
+                    <p>Le système a atteint une précision de 96.8% sur l'ensemble de test standardisé LFW (Labeled Faces in the Wild), surpassant plusieurs solutions commerciales dans des conditions similaires.</p>
+                    <p>Le temps de traitement moyen pour l'identification est de 0.2 secondes par image sur un ordinateur portable standard équipé d'un GPU de série GTX.</p>
+                </div>
+            </div>
+            
+            <div class="project-details" style="margin-top: 50px;">
+                <div class="project-info">
+                    <h3>Perspectives Futures</h3>
+                    <p>Le projet continue d'évoluer avec plusieurs pistes d'amélioration :</p>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;">
+                        <li>Intégration de la détection d'expressions faciales</li>
+                        <li>Amélioration de la robustesse face aux tentatives d'usurpation</li>
+                        <li>Développement d'une version mobile de l'application</li>
+                        <li>Extension de la base de données d'entraînement avec davantage de diversité</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Mobile</span>
+                        <span class="tech-tag">Anti-spoofing</span>
+                        <span class="tech-tag">Analyse d'émotions</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Apprentissages Clés</h3>
+                    <p>Ce projet a permis d'acquérir des compétences essentielles en :</p>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 20px;">
+                        <li>Conception et entraînement de réseaux neuronaux profonds</li>
+                        <li>Manipulation et prétraitement de grands ensembles de données</li>
+                        <li>Optimisation des performances pour le traitement en temps réel</li>
+                        <li>Considérations éthiques dans le développement d'IA</li>
+                        <li>Déploiement de modèles de machine learning en production</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="../index.html" class="btn primary-btn back-to-portfolio">Retour au Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Nicolas Piveteau - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
