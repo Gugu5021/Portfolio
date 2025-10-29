@@ -23,11 +23,3 @@ jobs:
 
       - name: Publish image to Docker Hub
         run: docker push gugu5021/portfolio
-
-      - name: pull image on VPS
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          password: ${{ secrets.VPS_PASSWORD }}
-          script: cd ${{ vars.PATH }} && docker compose up --pull always -d

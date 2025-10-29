@@ -1,0 +1,17 @@
+replicaCount: 1
+
+fullname: gugu5021portfolio
+
+image:
+  repository: gugu5021/portfolio
+  tag: latest
+  pullPolicy: Always
+
+service:
+  port: 80
+  targetPort: 3000
+
+ingress:
+  enabled: true
+  className: nginx
+  host: nicolas-portfolio.toastcie.dev

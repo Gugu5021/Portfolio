@@ -1,0 +1,8 @@
+apiVersion: v2
+name: gugu5021-portfolio
+description: portfolio for myself
+
+type: application
+
+version: 0.1.0
+appVersion: "latest"
